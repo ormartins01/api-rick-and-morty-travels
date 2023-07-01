@@ -1,0 +1,17 @@
+default: &default
+  host: localhost
+  user: user
+  password: "pass"
+  adapter: postgres
+
+development:
+  <<: *default
+  db: database
+
+test:
+  <<: *default
+  db: database
+
+production:
+  <<: *default
+  db: database
